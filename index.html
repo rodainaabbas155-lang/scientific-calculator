@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Scientific Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h2>Scientific Calculator - Web Lab Task</h2>
+<p>Roll No: BSITM-A-24-73</p>
+
+<div class="calculator">
+    <!-- display -->
+    <input type="text" id="screen" placeholder="0" readonly>
+
+    <div class="buttons">
+        <button class="clear" onclick="clearScreen()">C</button>
+        <button onclick="del()">DEL</button>
+        <button onclick="addToScreen('%')">%</button>
+        <button onclick="addToScreen('/')">/</button>
+
+        <button onclick="addToScreen('Math.sin(')">sin</button>
+        <button onclick="addToScreen('Math.cos(')">cos</button>
+        <button onclick="addToScreen('Math.tan(')">tan</button>
+        <button onclick="addToScreen('Math.sqrt(')">√</button>
+
+        <button onclick="addToScreen('Math.log10(')">log</button>
+        <button onclick="addToScreen('Math.log(')">ln</button>
+        <button onclick="addToScreen('**')">x^y</button>
+        <button onclick="addToScreen('Math.PI')">π</button>
+
+        <button onclick="addToScreen('7')">7</button>
+        <button onclick="addToScreen('8')">8</button>
+        <button onclick="addToScreen('9')">9</button>
+        <button onclick="addToScreen('*')">x</button>
+
+        <button onclick="addToScreen('4')">4</button>
+        <button onclick="addToScreen('5')">5</button>
+        <button onclick="addToScreen('6')">6</button>
+        <button onclick="addToScreen('-')">-</button>
+
+        <button onclick="addToScreen('1')">1</button>
+        <button onclick="addToScreen('2')">2</button>
+        <button onclick="addToScreen('3')">3</button>
+        <button onclick="addToScreen('+')">+</button>
+
+        <button onclick="addToScreen('0')">0</button>
+        <button onclick="addToScreen('.')">.</button>
+        <button onclick="addToScreen('(')">(</button>
+        <button onclick="addToScreen(')')">)</button>
+
+        <button class="equal" onclick="calculate()">=</button>
+        <button onclick="addToScreen('Math.E')">e</button>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
